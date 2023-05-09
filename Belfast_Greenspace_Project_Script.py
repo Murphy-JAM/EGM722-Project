@@ -6,6 +6,7 @@ import rasterio as rio
 import pyepsg
 import folium
 import os
+import pandas as pd
 
 # open data files
 
