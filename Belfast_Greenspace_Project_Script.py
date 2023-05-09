@@ -23,6 +23,13 @@ df = pd.read_csv('C:\\Users\\Julie\\Desktop\\Documents\\PostGrad\\Python Assess\
 # set the coordinate reference system using WGS84 code
 parks = gpd.GeoDataFrame(df[['NAME','ADDRESS','POSTCODE']], geometry=gpd.points_from_xy(df['LONGITUDE'], df['LATITUDE']), crs='epsg:4326')
 
+# show the new parks geodataframe
+parks.head(5)
+
+# add the Belfast park points to the existing map
+parks.explore('NAME', m=m, marker_type='marker', popup=True, legend=False)
+
+
 
 
 
