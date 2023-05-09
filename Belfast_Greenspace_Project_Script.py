@@ -46,6 +46,9 @@ parks.explore('NAME', **parks_args)
 # show the final map
 m
 
+# save map as an html file
+m.save('Belfast_Greenspace_VS_Deprivation.html')
+
 
 
 
