@@ -36,6 +36,10 @@ MDM.head(5)
 # join MDM scores to small areas based on a shared attribute
 merged = smallareas.merge(MDM, left_on='SA2011', right_on='SA2011')
 
+# create a map that illustrates deprivation scores for each small area and locations of Belfast parks
+m = merged.explore('MDM_Rk1wt', cmap='RdYlGn', legend_kwds={'caption': 'Deprivation Measure - least affluent (1) to most affluent (4537)'})
+
+
 
 
 
