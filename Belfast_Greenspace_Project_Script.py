@@ -8,7 +8,11 @@ import folium
 import os
 import pandas as pd
 
-# open data files
+# open small area file
+smallareas = gpd.read_file('C:\\Users\\Julie\\Desktop\\Documents\\PostGrad\\Python Assess\\Project\\New_Data_Project\\Belfast_SmallAreas.shp')
+
+
+
 
 
 
