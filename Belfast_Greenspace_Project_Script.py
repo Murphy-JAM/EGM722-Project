@@ -29,6 +29,11 @@ parks.head(5)
 # add the Belfast park points to the existing map
 parks.explore('NAME', m=m, marker_type='marker', popup=True, legend=False)
 
+# load deprivation scores for each small area in Belfast
+MDM = pd.read_csv('C:\\Users\\Julie\\Desktop\\Documents\\PostGrad\\Python Assess\\Project\\New_Data_Project\\MDM_2017_SA.csv')
+
+
+
 
 
 
