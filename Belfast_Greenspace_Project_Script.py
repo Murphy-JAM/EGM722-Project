@@ -38,6 +38,13 @@ merged = smallareas.merge(MDM, left_on='SA2011', right_on='SA2011')
 
 # create a map that illustrates deprivation scores for each small area and locations of Belfast parks
 m = merged.explore('MDM_Rk1wt', cmap='RdYlGn', legend_kwds={'caption': 'Deprivation Measure - least affluent (1) to most affluent (4537)'})
+parks_args = {'m' : m, 'marker_type' : 'marker', 'popup' : True, 'legend' : False, 'marker_kwds': {'icon' : folium.Icon(colour='darkgreen', icon='tree', prefix='fa')}}
+
+# use the parks_args with the **unpacking operator
+parks.explore('NAME', **parks_args)
+
+# show the final map
+m
 
 
 
